@@ -6,15 +6,16 @@ var outer = function(){
     return 'The original name was ' + name;
   }
 }
-//Above you're given a function that returns another function which has a closure over the name variable.
+//Above you're given a function that returns another function which has a closure over the
+// name variable.
 //Invoke outer saving the return value into another variable called 'inner'.
 
   //Code Here
-
+var inner = outer();
 //Once you do that, invoke inner.
 
   //Code Here
-
+inner();
 
 
 //Next problem
@@ -30,7 +31,8 @@ var callFriend = function(){
 };
 
 //Above you're given a callFriend function that returns another function.
-//Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
+//Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' 
+//in your console.
 
   //Code Here
 
@@ -58,10 +60,10 @@ var callFriend = function(){
 
 
 /*
-  Write a function that accepts another function as it's first argument and returns a new function
-  (which invokes the original function that was passed in) that can only ever be executed once.
-  Once completed, add a second argument that allows the function to be invoked N number of times.
-  After the function has been called N number of times, console.log('STAHHP');
+  Write a function that accepts another function as it's first argument and returns a 
+  new function (which invokes the original function that was passed in) that can only ever be 
+  executed once. Once completed, add a second argument that allows the function to be invoked 
+  N number of times. After the function has been called N number of times, console.log('STAHHP');
 */
 
 
